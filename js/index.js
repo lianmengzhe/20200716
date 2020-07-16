@@ -57,7 +57,7 @@ slideShow.style.transition = "all 3s";
 
 var spans = document.querySelectorAll(".bannerBar span");
 let index = 0;
-spans[index].style.background = "#2691fd";
+spans[index].style.background = "#fff";
 
 for(let j = 0 ; j < images.length ; j++){
     spans[j].addEventListener("click",function () {
@@ -69,7 +69,7 @@ for(let j = 0 ; j < images.length ; j++){
         }
 
         images[index].style.zIndex = 10;
-        spans[index].style.background = "#2691fd";
+        spans[index].style.background = "#fff";
     })
 }
 
@@ -82,7 +82,7 @@ setInterval(function () {
         images[i].style.zIndex = 0;
     }
     images[index].style.zIndex = 10;
-    spans[index].style.background = "#2691fd";
+    spans[index].style.background = "#fff";
     index++;
 },3000)
 
